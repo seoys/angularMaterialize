@@ -16,7 +16,7 @@
 
 ## Authors:
 
-* seoys<sosohappy@29cm.co.kr>
+* <sosohappy@29cm.co.kr>
 
 ## Licensing
 
