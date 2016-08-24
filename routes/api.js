@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-console.log("abcdefg");
+console.log("test");
   res.render('index');
 });
 
