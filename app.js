@@ -10,8 +10,14 @@ var swig = require('swig');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-
 var app = express();
+const http = require('http');
+const monitor = require('koa-monitor');
+//const server = http.createServer(app.callback());
+
+
+
+
 
 // view engine setup
 
@@ -33,6 +39,10 @@ app.use(express.static(path.join(__dirname + '/node_modules')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+// then after
+// app.use(monitor(server, {path: '/status'}))
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
